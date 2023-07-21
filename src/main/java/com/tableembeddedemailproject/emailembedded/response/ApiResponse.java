@@ -7,7 +7,7 @@ public class ApiResponse {
 
     private HttpStatus status;
 
-    private Object message;
+    private String message;
 
 
     //@JsonInclude(JsonInclude.Include.NON_NULL)
@@ -26,7 +26,7 @@ public class ApiResponse {
         this.data = data;
     }
 
-    public ApiResponse(HttpStatus status, Object message) {
+    public ApiResponse(HttpStatus status, String message) {
         //super();
         this.status = status;
         this.message = message;
@@ -40,7 +40,7 @@ public class ApiResponse {
         this.status = status;
     }
 
-    public Object getMessage() {
+    public String getMessage() {
         return message;
     }
 

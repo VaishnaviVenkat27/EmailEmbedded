@@ -11,7 +11,7 @@ public class Merchant {
     private int id;
 
     @Column(name="held_date")
-    private Date helddate;
+    private String helddate;
 
     @Column(name="mid")
     private String mid;
@@ -28,7 +28,7 @@ public class Merchant {
     private String mcc;
 
     @Column(name="gross_amount")
-    private double grossAmount;
+    private String grossAmount;
 
     @Column(name="rrn")
     private String rrn;
@@ -66,11 +66,11 @@ public class Merchant {
         this.id = id;
     }
 
-    public Date getHelddate() {
+    public String getHelddate() {
         return helddate;
     }
 
-    public void setHelddate(Date helddate) {
+    public void setHelddate(String helddate) {
         this.helddate = helddate;
     }
 
@@ -114,11 +114,11 @@ public class Merchant {
         this.mcc = mcc;
     }
 
-    public double getGrossAmount() {
+    public String getGrossAmount() {
         return grossAmount;
     }
 
-    public void setGrossAmount(double grossAmount) {
+    public void setGrossAmount(String grossAmount) {
         this.grossAmount = grossAmount;
     }
 
